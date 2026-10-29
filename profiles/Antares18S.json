@@ -1,0 +1,103 @@
+{
+  "glider": "Lange Antares 18S",
+  "vjoyDevice": 1,
+  "zoneRadius": 0.10,
+  "pinchGrab": 0.5,
+  "pinchRelease": 0.25,
+  "controllerStickTravel": 0.10,
+  "controllerRudderAngle": 30,
+  "autorudderKey": "A",
+  "autorudderOn": false,
+  "controls": [
+    {
+      "name": "stick",
+      "type": "stick",
+      "say": "stick",
+      "hand": "any",
+      "fromPrompt": "stick centred",
+      "toPrompt": "stick fully forward",
+      "rightPrompt": "stick fully right",
+      "from": null,
+      "to": null,
+      "right": null,
+      "vjoyAxis": "RY",
+      "vjoyRange": [1, 0],
+      "vjoyRollAxis": "RX",
+      "vjoyRollRange": [0, 1],
+      "vjoyRudderAxis": "RZ",
+      "vjoyRudderRange": [0, 1]
+    },
+    {
+      "name": "airbrake",
+      "type": "lever",
+      "say": "airbrake",
+      "hand": "left",
+      "fromPrompt": "airbrake closed",
+      "toPrompt": "airbrake fully open",
+      "from": null,
+      "to": null,
+      "vjoyAxis": "X",
+      "initial": 0,
+      "feedback": "announce",
+      "announce": "brakes",
+      "announceEnds": ["closed", "full"],
+      "announceEvery": 8
+    },
+    {
+      "name": "flaps",
+      "type": "lever",
+      "say": "flaps",
+      "hand": "left",
+      "fromPrompt": "flaps at 2 L",
+      "toPrompt": "flaps at minus 3",
+      "from": null,
+      "to": null,
+      "vjoyAxis": "Y",
+      "vjoyRange": [1, 0],
+      "detents": ["flaps 2 L", "flaps 1", "flaps zero", "flaps minus 1", "flaps minus 2", "flaps minus 3"],
+      "initial": 2
+    },
+    {
+      "name": "trim",
+      "type": "lever",
+      "say": "trim",
+      "hand": "left",
+      "fromPrompt": "trim fully forward",
+      "toPrompt": "trim fully back",
+      "from": null,
+      "to": null,
+      "vjoyAxis": "Z",
+      "initial": 0.5,
+      "feedback": "ticks"
+    },
+    {
+      "name": "gear",
+      "type": "button",
+      "say": "gear",
+      "hand": "left",
+      "fromPrompt": "gear switch",
+      "from": null,
+      "vjoyButton": 2
+    },
+    {
+      "name": "ballast",
+      "type": "button",
+      "say": "water ballast",
+      "hand": "right",
+      "fromPrompt": "water ballast switch",
+      "from": null,
+      "vjoyButton": 3,
+      "states": ["ballast closed", "dumping ballast"],
+      "initial": 0
+    },
+    {
+      "name": "release",
+      "type": "button",
+      "say": "release",
+      "hand": "left",
+      "fromPrompt": "tow release knob",
+      "from": null,
+      "vjoyButton": 1
+    }
+  ]
+}

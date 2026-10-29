@@ -1,0 +1,19 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "win32",
+      "displayName": "Win32 (Condor.exe is 32-bit)",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "Win32",
+      "binaryDir": "${sourceDir}/build"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "configurePreset": "win32",
+      "configuration": "RelWithDebInfo"
+    }
+  ]
+}

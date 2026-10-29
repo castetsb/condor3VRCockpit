@@ -1,0 +1,56 @@
+{
+  "glider": "Grunau Baby",
+  "vjoyDevice": 1,
+  "zoneRadius": 0.10,
+  "pinchGrab": 0.5,
+  "pinchRelease": 0.25,
+  "controllerStickTravel": 0.10,
+  "controllerRudderAngle": 30,
+  "autorudderKey": "A",
+  "autorudderOn": false,
+  "controls": [
+    {
+      "name": "stick",
+      "type": "stick",
+      "say": "stick",
+      "hand": "any",
+      "fromPrompt": "stick centred",
+      "toPrompt": "stick fully forward",
+      "rightPrompt": "stick fully right",
+      "from": null,
+      "to": null,
+      "right": null,
+      "vjoyAxis": "RY",
+      "vjoyRange": [1, 0],
+      "vjoyRollAxis": "RX",
+      "vjoyRollRange": [0, 1],
+      "vjoyRudderAxis": "RZ",
+      "vjoyRudderRange": [0, 1]
+    },
+    {
+      "name": "airbrake",
+      "type": "lever",
+      "say": "airbrake",
+      "hand": "left",
+      "fromPrompt": "airbrake closed",
+      "toPrompt": "airbrake fully open",
+      "from": null,
+      "to": null,
+      "vjoyAxis": "X",
+      "initial": 0,
+      "feedback": "announce",
+      "announce": "brakes",
+      "announceEnds": ["closed", "full"],
+      "announceEvery": 8
+    },
+    {
+      "name": "release",
+      "type": "button",
+      "say": "release",
+      "hand": "left",
+      "fromPrompt": "tow release handle",
+      "from": null,
+      "vjoyButton": 1
+    }
+  ]
+}

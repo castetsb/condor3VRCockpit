@@ -1,0 +1,7 @@
+build/
+out/
+.vs/
+*.user
+*.log
+CMakeUserPresets.json
+ovrprobe.log

@@ -1,0 +1,11 @@
+{
+  "file_format_version": "1.0.0",
+  "api_layer": {
+    "name": "XR_APILAYER_CONDOR3VRCOCKPIT_hands",
+    "library_path": ".\\XR_APILAYER_CONDOR3VRCOCKPIT_hands.dll",
+    "api_version": "1.0",
+    "implementation_version": "1",
+    "description": "Hand-tracked cockpit controls for Condor 3",
+    "disable_environment": "DISABLE_XR_APILAYER_CONDOR3VRCOCKPIT_hands"
+  }
+}

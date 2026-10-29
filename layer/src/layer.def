@@ -1,0 +1,3 @@
+; 32-bit __stdcall exports are name-decorated; the loader looks up the plain name.
+EXPORTS
+    xrNegotiateLoaderApiLayerInterface
